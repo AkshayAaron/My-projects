@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="css/style2.css">
+    <title>Register | PlayStataion</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function validate()
+		{
+			var mail=document.getElementById('mailid').value;
+			var patt=/[a-z0-9]+[@][a-z]+[.](com|org|in)/g;
+			var op=patt.test(mail);
+			if(op)
+			{
+				window.location.assign('cong.html');
+			}
+			else {
+				window.alert("Email ID is in Incorrect Format");
+			}
+		}
+	</script>
+        <div class="signup">
+                <img src="./img/14.png" class="avatar">
+                <h1>Sign Up</h1>
+                <form onreset="alert('Data will be reset')" >
+                    <input type="text" placeholder="First name" required><br><br>
+                    <input type="text" placeholder="Last name" required><br><br>
+                    <input type="password" placeholder="Password" required><br><br>
+                    <input type="password" placeholder="Confirm Password" required><br><br>
+                    <input type="text" placeholder="Email" id="mailid" required><br><br>
+                    Gender:
+                                    <input type="radio" size=30 name="gender" value="yes"/>Male
+                                    <input type="radio" size=30 name="gender" value="no"/>Female
+                                    <BR><br>
+
+                                    <select name="dob">
+                                            <option >Date</option>
+                                            <option >01</option>
+                                            <option >02</option>
+                                            <option >03</option>
+                                            <option >04</option>
+                                            <option >05</option>
+                                            <option >05</option>
+                                            <option >06</option>
+                                            <option >07</option>
+                                            <option >08</option>
+                                            <option >09</option>
+                                            <option >10</option>
+                                            <option >11</option>
+                                            <option >12</option>
+                                            <option >13</option>
+                                            <option >14</option>
+                                            <option >15</option>
+                                            <option >16</option>
+                                            <option >17</option>
+                                            <option >18</option>
+                                            <option >19</option>
+                                            <option >20</option>
+                                            <option >21</option>
+                                            <option >22</option>
+                                            <option >23</option>
+                                            <option >24</option>
+                                            <option >25</option>
+                                            <option >26</option>
+                                            <option >27</option>
+                                            <option >28</option>
+                                            <option >29</option>
+                                            <option >30</option>
+                                            <option >31</option>
+                                    
+                                        </SELECT>
+                                        <select name="dob">
+                                        <option value="Month">Month</option>
+                                        <option >January</option>
+                                        <option >February</option>
+                                        <option >March</option>
+                                        <option >April</option>
+                                        <option >May</option>
+                                        <option >June</option>
+                                        <option >July</option>
+                                        <option >August</option>
+                                        <option >September</option>
+                                        <option >October</option>
+                                        <option >November</option>
+                                        <option >December</option>
+                                    </SELECT>
+                                    <select name="dob">
+                                            <option >Year</option>
+                                            <option >1999</option>
+                                            <option >1998</option>
+                                            <option >1997</option>
+                                     </select>
+                                    <BR><BR>
+                                    
+                                    
+                                    <select name="Country">
+                                        
+                                        <option value="select country">Select Country</option>
+                                        <option value="India">India</option>
+                                        <option value="aus">Australia</option>
+                                        <option value="usa">Usa</option>
+                                        <option value="canada">Canada</option>
+                                        <option value="nzl">NewZealand</option>
+                                        <option value="sla">Srilanka</option>
+                                        <option value="arg">Argentina</option>
+                                        <option value="ugd">Uganda</option>
+                                        
+                                    </select>
+                                    <br><br>     
+                    <input type="button" value="Sign up" onclick="javascript:validate()"><br><br>
+                    <input type="RESET" size=40 placeholder="Reset" >
+
+                </form>
+    
+</body>
+</html>

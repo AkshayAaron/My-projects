@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Welcome | PlayStation</title>
+</head>
+<body>
+    <main> 
+        <header>
+                <div id="brand">
+                    
+                    </div><br><br>
+            <nav>
+            <div class="topnav">
+                <div id="product">
+                </div>
+                <a href="login.html"  class="button">Sign In</a>
+
+            </div>
+                    <div class="links">
+                            <a class="olink" href="index.html">>Home</a>
+                            <a class="olink" href="#">>Games</a>
+                            <a class="olink" href="#">>Services</a>
+                            <a class="olink" href="#">>Products</a>
+                    </div>
+                    
+            </nav>
+        </header>
+        <section id="showcase">
+            <div class="container">
+                <h1>PlayStationVR</h1>
+                <p>Immerse yourself in extraordinary new worlds and experience incredible new ways to play.
+                    </p>
+                <a href="https://www.playstation.com/en-in/explore/playstation-vr/" >>See the future of play</a>
+            </div>
+        </section>
+        <section id="boxes">
+            <div class="container">
+                <div class="box">
+                        <img src="./img/1.png">
+                    <h2>Accessories</h2>
+                    <p>Add to your gaming setup with official PS4 accessories,enhanced audio headsets and pro level controllers.</p>
+                </div>
+                <div class="box">
+                    <img src="./img/2.png">
+                        <h2>Hardware</h2>
+                        <p>Order our latest hardware.</p>         
+               </div>
+                    <div class="box">
+                        <img src="./img/3.png">
+                            <h2>Gaming Bundles</h2>
+                            <p>Enjoy our gaming bundles with upto 70% off!!.</p>
+                        </div>
+            </div>
+        </section>
+        <section>
+            <div id="showcse">
+                <div class="container">
+                    <h1>PS4 PRO</h1>
+                    <p>Discover the most powerful PlayStation ever made,with faster frame rates and incredible 4K visuals.</p>
+                    <a href="https://www.playstation.com/en-in/explore/ps4/ps4-pro/">>Meet the super-charged PS4 Pro</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>Browse our latest games</h3>
+            <div class="slides" >
+              
+                <img class="mySlides" src="./img/43.jpg" style="width:100%">
+                <img class="mySlides" src="./img/50.jpg" style="width:100%">
+                <img class="mySlides" src="./img/21.jpg" style="width:100%">
+                <img class="mySlides" src="./img/22.jpg" style="width:100%">
+              </div>
+              
+              <script>
+              var myIndex = 0;
+              carousel();
+              
+              function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) 
+                {
+                    myIndex = 1;
+                }    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 3000);    
+              }
+              </script>
+
+        </section>
+        <footer>
+           
+                <a href="about.html">About Us</a> |
+                <a href="support.html">Support</a>  |
+                <a href="Legal.html">Legal</a>  |
+                <a href="privacy.html">Privacy and Cookies</a><br>
+
+            <p>Website ©2019 Sony Interactive Entertainment Europe Limited. All content, games titles, trade names and/or trade dress, trademarks, artwork and associated imagery are trademarks and/or copyright material of their respective owners. All rights reserved.</p>
+        </footer>
+       
+    </main>
+</body>
+</html>

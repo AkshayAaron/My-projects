@@ -1,0 +1,34 @@
+package com.zensar;
+
+abstract class Persistance{
+    abstract void persist();
+}
+
+class FilePersistance extends Persistance{
+    @Override
+    void persist() {
+        System.out.println("Data Persisted into file");
+    }
+}
+
+class DatabasePersistance extends Persistance{
+    @Override
+    void persist() {
+        System.out.println("Data Persisted into database");
+    }
+}
+
+class PersistanceFactory{
+    public static Persistance getPersistance(){
+        Persistance fp=new FilePersistance();
+        Persistance dp=new DatabasePersistance();
+        return fp;
+    }
+}
+
+public class PersistanceCheck {
+    public static void main(String[] args) {
+        Persistance persistance=PersistanceFactory.getPersistance();
+        persistance.persist();
+    }
+}
